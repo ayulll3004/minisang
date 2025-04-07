@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Minisang</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body class="bg-dark">
+    <div class="container p-0 mb-4 mt-4 rounded-3 shadow bg-white">
+        <!-- menu -->
+        <nav class="d-md-flex p-4">
+            <div><h1>Minisang</h1></div>
+            <div class="ms-auto my-auto">
+                <ul class="list-inline m-0">
+                    <li class="list-inline-item mx-md-3"><a href="#product" class="text-decoration-none text-dark fw-bold">Produk</a></li>
+                    <li class="list-inline-item mx-md-3"><a href="#tentang" class="text-decoration-none text-dark fw-bold">Tentang</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- banner -->
+        <div class="px-4 mb-4">
+            <img src="banner.jpg" class="w-100 rounded-3"/>
+        </div>
+
+        <!-- katalog -->
+        <h3 class="text-center" id="product">Our Product</h3>
+        <div class="text-center w-50 mx-auto fw-light">Minisang adalah camilan berbahan dasar pisang yang dipotong kecil-kecil berbentuk bites, lalu dilapisi coklat dan berbagai topping lezat. Produk ini hadir dengan berbagai varian rasa yang unik dan menggugah selera.</div>
+
+        <div class="row row-cols-md-3 row-cols-2 gx-5 p-5">
+            <!-- Card 1: Original -->
+            <div class="col-md-3 mb-4">
+                <div class="card mx-2">
+                    <img src="cake1.jpg" class="card-img-top" alt="Original">
+                    <div class="card-body text-center">
+                        <h5 class="card-title"> Rasa Original</h5>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalOriginal">
+                            Lihat Detail
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2: Coklat Keju -->
+            <div class="col-md-3 mb-4">
+                <div class="card mx-2">
+                    <img src="cake2.jpg" class="card-img-top" alt="Coklat Keju">
+                    <div class="card-body text-center">
+                        <h5 class="card-title"> Rasa Coklat Keju</h5>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCoklatKeju">
+                            Lihat Detail
+                        </button>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Card 3: Susu Keju -->
+            <div class="col-md-3 mb-4">
+                <div class="card mx-2">
+                    <img src="cake3.jpg" class="card-img-top" alt="Susu Keju">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Rasa Susu Keju</h5>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalSusuKeju">
+                            Lihat Detail
+                        </button>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Card 4: Tiramisu -->
+            <div class="col-md-3 mb-4">
+                <div class="card mx-2">
+                    <img src="cake4.jpg" class="card-img-top" alt="Tiramisu">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Rasa Tiramisu</h5>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalTiramisu">
+                                Lihat Detail
+                        </button>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Card 5: Matcha -->
+            <div class="col-md-3 mb-4">
+                <div class="card mx-2">
+                    <img src="cake5.jpg" class="card-img-top" alt="Matcha">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Rasa Matcha</h5>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalMatcha">
+                            Lihat Detail
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6: Susu Milo -->
+            <div class="col-md-3 mb-4">
+                <div class="card mx-2">
+                    <img src="cake6.jpg" class="card-img-top" alt="Susu Milo">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Rasa Susu Milo</h5>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalSusuMilo">
+                            Lihat Detail
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 7: Taro -->
+            <div class="col-md-3 mb-4">
+                <div class="card mx-2">
+                    <img src="cake1.jpg" class="card-img-top" alt="Taro">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Rasa Taro</h5>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalTaro">
+                            Lihat Detail
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 8: Strawberry -->
+            <div class="col-md-3 mb-4">
+                <div class="card mx-2">
+                    <img src="cake2.jpg" class="card-img-top" alt="Strawberry">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Rasa Strawberry</h5>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalStrawberry">
+                            Lihat Detail
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- tentang -->
+        <div id="tentang" class="px-4 py-4 bg-secondary text-center">
+          <div class="mx-auto w-75">
+            <h3 class="text-white">Tentang Kami</h3>
+            <p class="text-center text-white"><img src="about-us.png" align="left" style="width: 100px; height: auto" class="me-3 mb-3"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa itaque quisquam rerum eum cumque vero optio, expedita consequuntur? Nobis nisi inventore beatae repudiandae magnam provident itaque officiis, dolor enim.</p>
+          </div>
+        </div>
+
+        <!-- copyright -->
+        <div class="text-center p-4 border-top">&copy; 2025 Dessert</div>
+
+    </div>
+
+<!-- Modal Original -->
+<div class="modal fade" id="modalOriginal" tabindex="-1" aria-labelledby="modalOriginalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalOriginalLabel">Minisang Rasa Original</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="cake1.jpg" class="img-fluid mb-3" alt="Original">
+                <p>Minisang versi original tanpa topping, cocok bagi yang ingin menikmari rasa asli pisang goreng yang autentik.</p>
+                <p><strong>Harga:</strong> Rp10.000</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                <a href="https://wa.me/6282388431835?text=Halo,%20saya%20ingin%20memesan%20Minisang%20varian%20Original" 
+                   class="btn btn-success" target="_blank">
+                   📲 Pesan Sekarang
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Coklat Keju -->
+<div class="modal fade" id="modalCoklatKeju" tabindex="-1" aria-labelledby="modalCoklatKejuLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalCoklatKejuLabel">Minisang Rasa Coklat Keju</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="cake2.jpg" class="img-fluid mb-3" alt="Coklat Keju">
+                <p>Minisang dengan perpaduan saus coklat yang lezat dan taburan keju yang melimpah, kombinasi rasa manis dan asin yang sempurna.</p>
+                <p><strong>Harga:</strong> Rp10.000</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                <a href="https://wa.me/6282388431835?text=Halo,%20saya%20ingin%20memesan%20Minisang%20varian%20Coklat%20Keju" 
+                   class="btn btn-success" target="_blank">
+                   📲 Pesan Sekarang
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Susu Keju -->
+<div class="modal fade" id="modalSusuKeju" tabindex="-1" aria-labelledby="modalSusuKejuLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalSusuKejuLabel">Minisang Rasa Susu Keju</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="cake3.jpg" class="img-fluid mb-3" alt="Susu Keju">
+                <p>Minisang dengan susu manis dan keju yang creamy, perpaduan rasa manis dan gurih yang membuat ketagihan.</p>
+                <p><strong>Harga:</strong> Rp10.000</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                <a href="https://wa.me/6282388431835?text=Halo,%20saya%20ingin%20memesan%20Minisang%20varian%20Susu%20Keju" 
+                   class="btn btn-success" target="_blank">
+                   📲 Pesan Sekarang
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Tiramisu -->
+<div class="modal fade" id="modalTiramisu" tabindex="-1" aria-labelledby="modalTiramisuLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalTiramisuLabel">Minisang Rasa Tiramisu</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="cake4.jpg" class="img-fluid mb-3" alt="Tiramisu">
+                <p>Minisang dengan rasa tiramisu yang lembut dan kaya rasa kopi, memberikan sensai lembut dan aroma yang menggoda.</p>
+                <p><strong>Harga:</strong> Rp10.000</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                <a href="https://wa.me/6282388431835?text=Halo,%20saya%20ingin%20memesan%20Minisang%20varian%20Tiramisu" 
+                   class="btn btn-success" target="_blank">
+                   📲 Pesan Sekarang
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Matcha -->
+<div class="modal fade" id="modalMatcha" tabindex="-1" aria-labelledby="modalMatchaLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalMatchaLabel">Minisang Rasa Matcha</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="cake5.jpg" class="img-fluid mb-3" alt="Matcha">
+                <p>Minisang dengan saus matcha premium yang khas dan harum, pilihan yang sempurna untuk pecinta matcha.</p>
+                <p><strong>Harga:</strong> Rp10.000</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                <a href="https://wa.me/6282388431835?text=Halo,%20saya%20ingin%20memesan%20Minisang%20varian%20Matcha" 
+                   class="btn btn-success" target="_blank">
+                   📲 Pesan Sekarang
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Susu Milo -->
+<div class="modal fade" id="modalSusuMilo" tabindex="-1" aria-labelledby="modalSusuMiloLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalSusuMiloLabel">Minisang Rasa Susu Milo</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="cake6.jpg" class="img-fluid mb-3" alt="Susu Milo">
+                <p>Minisang dengan saus susu manis dan Milo yang kaya rasa, memberikan sensai manis coklat susu yang creamy dan lezat.</p>
+                <p><strong>Harga:</strong> Rp10.000</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                <a href="https://wa.me/6282388431835?text=Halo,%20saya%20ingin%20memesan%20Minisang%20varian%20Susu%20Milo" 
+                   class="btn btn-success" target="_blank">
+                   📲 Pesan Sekarang
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Taro -->
+<div class="modal fade" id="modalTaro" tabindex="-1" aria-labelledby="modalTaroLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalTaroLabel">Minisang Rasa Taro</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="cake1.jpg" class="img-fluid mb-3" alt="Taro">
+                <p>Minisang dengan saus taro yang sedikit manis, memberikan rasa khas yang unik.</p>
+                <p><strong>Harga:</strong> Rp10.000</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                <a href="https://wa.me/6282388431835?text=Halo,%20saya%20ingin%20memesan%20Minisang%20varian%20Taro" 
+                   class="btn btn-success" target="_blank">
+                   📲 Pesan Sekarang
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Strawberry -->
+<div class="modal fade" id="modalStrawberry" tabindex="-1" aria-labelledby="modalStrawberryLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalStrawberryLabel">Minisang Rasa Strawberry</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="cake2.jpg" class="img-fluid mb-3" alt="Strawberry">
+                <p>Minisang dengan saus Strawberry yang manis dan asam, menciptakan rasa yang menyegarkan dan cocok bagi pecinta buah strawberry.</p>
+                <p><strong>Harga:</strong> Rp10.000</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                <a href="https://wa.me/6282388431835?text=Halo,%20saya%20ingin%20memesan%20Minisang%20varian%20Strawberry" 
+                   class="btn btn-success" target="_blank">
+                   📲 Pesan Sekarang
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
